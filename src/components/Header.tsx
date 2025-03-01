@@ -1,12 +1,15 @@
-import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
+import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
+import { IoClose, IoMenu } from 'react-icons/io5';
+import { useState } from 'react';
 interface Header {
   onClick: React.Dispatch<React.SetStateAction<boolean>>;
 }
 const Header = ({ onClick }: Header) => {
+  const [isActive, setIsActive] = useState(false);
   return (
-    <header className="css-yesj0r">
-      <div className="css-3jm7jv">
+    <header className=" css-yesj0r">
+      <div className="relative css-3jm7jv">
         <div className="css-rvp98e">
           <a href="/">
             <img src={logo} alt="Logo" className="css-x5cgkf" />
@@ -74,48 +77,46 @@ const Header = ({ onClick }: Header) => {
           </button>
           <button
             type="button"
-            className="chakra-button css-vpc648 border border-green-500"
+            className="chakra-button bg-green-400/25 rounded-full px-2 p-1 border border-green-500 hidden lg:block"
             onClick={() => onClick(true)}
           >
             Connect
           </button>
-          <button type="button" className="chakra-button css-1d6lhti">
-            <div className="icon-back css-0">
-              <div className="flex items-center justify-center absolute transition-opacity duration-300 css-whh5e5">
-                <svg
-                  viewBox="0 0 10 12"
-                  focusable="false"
-                  className="chakra-icon css-z56who"
+          <div className="block lg:hidden">
+            {isActive ? (
+              <IoClose onClick={() => setIsActive(!isActive)} />
+            ) : (
+              <IoMenu onClick={() => setIsActive(!isActive)} />
+            )}
+          </div>
+          {isActive && (
+            <div className="mt-[300px] flex lg:hidden bg-[#252b28] w-full fixed left-0 right-0 ">
+              <ul className="flex flex-col p-4 w-full">
+                <a href="/" className="chakra-link css-1jcrmdz">
+                  Swap
+                </a>
+                <a href="/" className="chakra-link css-1jcrmdz">
+                  Earn
+                </a>
+                <a href="/" className="chakra-link css-1jcrmdz">
+                  Voting
+                </a>
+                <a href="/" className="chakra-link css-1jcrmdz">
+                  xNFT
+                </a>
+                <Link to="functionalities" className="chakra-link css-1jcrmdz">
+                  Functionalities
+                </Link>
+                <button
+                  type="button"
+                  className="chakra-button w-full mt-5 rounded-full text-white bg-green-400/25 border border-green-500"
+                  onClick={() => onClick(true)}
                 >
-                  <path
-                    d="M5.93471 12C2.65893 11.9965 0.00456634 9.31384 0.00108962 6.00365C-0.0747031 1.52839 4.96099 -1.48431 8.79814 0.76128L9.56604 1.19204L8.80301 1.63169C5.49015 3.47464 5.73236 8.56242 9.19866 10.0795L10.0002 10.4447L9.27469 10.9474C8.29239 11.6318 7.12769 11.9986 5.93448 11.9998L5.93471 12Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </div>
+                  Connect
+                </button>
+              </ul>
             </div>
-          </button>
-          <button
-            type="button"
-            className="chakra-button css-pgso76"
-            aria-label="Menu"
-            id="popover-trigger-:r24:"
-            aria-haspopup="dialog"
-            aria-expanded="false"
-            aria-controls="popover-content-:r24:"
-          >
-            <svg
-              viewBox="0 0 24 24"
-              focusable="false"
-              className="chakra-icon css-15qqx0c"
-              aria-hidden="true"
-            >
-              <path
-                d="M7.93994 0H3.01001C2.21095 0.00317281 1.44568 0.322688 0.881592 0.888647C0.317507 1.45461 0.000522532 2.22094 0 3.02V7.95C0.00079422 8.74806 0.318256 9.5132 0.882568 10.0775C1.44688 10.6418 2.21195 10.9592 3.01001 10.96H7.93994C8.738 10.9592 9.50331 10.6418 10.0676 10.0775C10.6319 9.5132 10.9492 8.74806 10.95 7.95V3.02C10.9494 2.22094 10.6324 1.45461 10.0684 0.888647C9.50427 0.322688 8.739 0.00317281 7.93994 0ZM9.48999 7.95C9.48789 8.36044 9.32392 8.75347 9.03369 9.04369C8.74346 9.33392 8.35038 9.4979 7.93994 9.5H3.01001C2.59901 9.49973 2.20493 9.33635 1.91431 9.04572C1.62368 8.7551 1.46023 8.361 1.45996 7.95V3.02C1.4593 2.81627 1.499 2.61441 1.57666 2.42606C1.65432 2.23771 1.76854 2.06657 1.9126 1.92251C2.05666 1.77845 2.22766 1.6643 2.41602 1.58664C2.60437 1.50898 2.80628 1.46934 3.01001 1.47H7.93994C8.35095 1.47027 8.74502 1.63365 9.03564 1.92428C9.32627 2.2149 9.48973 2.609 9.48999 3.02V7.95Z"
-                fill="currentColor"
-              />
-            </svg>
-          </button>
+          )}
         </div>
       </div>
     </header>

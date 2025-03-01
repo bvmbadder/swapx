@@ -1,14 +1,14 @@
-import { Stack } from "@chakra-ui/react";
-import Banner from "./Banner";
-import Hero from "./Hero";
-import Main from "./Main";
-import bg from "../assets/bg.png";
-import Header from "../components/Header";
-import WalletModal from "../components/WalletModal";
-import { moreWallets } from "../utils";
-import { useState } from "react";
-import TabModal from "../components/TabModal";
-import Footer from "./Footer";
+import { Stack } from '@chakra-ui/react';
+import Banner from './Banner';
+import Hero from './Hero';
+import Main from './Main';
+import bg from '../assets/bg.png';
+import Header from '../components/Header';
+import WalletModal from '../components/WalletModal';
+import { moreWallets } from '../utils';
+import { useState } from 'react';
+import TabModal from '../components/TabModal';
+import Footer from './Footer';
 
 const Home = () => {
   const [formTab, setFormTab] = useState(false);
@@ -19,7 +19,7 @@ const Home = () => {
     setFirstModalOpen(true);
   };
 
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState('');
 
   const [showDetails, setShowDetails] = useState(false);
   const [isSelected, setIsSelected] = useState<{
@@ -41,13 +41,13 @@ const Home = () => {
           {/* Wallet List (Always visible on desktop, conditionally visible on mobile) */}
           <div
             className={`flex flex-col gap-3 h-[400px] overflow-scroll w-full lg:w-[40%] border-r p-3 ${
-              showDetails ? "hidden lg:flex" : "flex"
+              showDetails ? 'hidden lg:flex' : 'flex'
             }`}
           >
             {moreWallets.map((item) => (
               <div
                 className={`flex gap-5 cursor-pointer rounded-lg p-1 ${
-                  item === isSelected ? "bg-green-400" : ""
+                  item === isSelected ? 'bg-green-400' : ''
                 }`}
                 key={item.name}
                 onClick={() => {
@@ -71,7 +71,7 @@ const Home = () => {
           {/* Details Section (Replaces list on mobile, shown alongside on desktop) */}
           <div
             className={`flex-1 ${
-              showDetails ? "block" : "hidden lg:block"
+              showDetails ? 'block' : 'hidden lg:block'
             } relative`}
           >
             {/* Back Button (Visible only on mobile) */}
@@ -147,14 +147,14 @@ const Home = () => {
         <img
           src={bg}
           id="ios"
-          style={{ width: "100%", height: "100%", position: "fixed" }}
+          style={{ width: '100%', height: '100%', position: 'fixed' }}
         />
       </div>
 
       <Header onClick={setFirstModalOpen} />
       <div
         className="chakra-stack px-[0.8rem] mx-auto flex-1 w-full css-tl3ftk"
-        style={{ maxWidth: "calc(1600px + 1.6rem)" }}
+        style={{ maxWidth: 'calc(1600px + 1.6rem)' }}
       >
         <div className="css-uwwqev">
           <div className="pt-3 overflow-hidden css-0">

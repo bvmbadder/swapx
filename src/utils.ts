@@ -1,459 +1,435 @@
-import Recovery from "./assets/func/recovery.png";
-import Metamask from "./assets/wallets/metamask.png";
-import Phantom from "./assets/wallets/phantom-wallet.png";
-import Walletconnect from "./assets/wallets/walletconnect.png";
-import All from "./assets/wallets/all.png";
-import abc from "./assets/wallets/abc.png";
-import ambire from "./assets/wallets/ambire.png";
-import argent from "./assets/wallets/argent.png";
-import assureWallet from "./assets/wallets/assure-wallet.png";
-import befi from "./assets/wallets/befi.png";
-import belo from "./assets/wallets/belo.png";
-import bifrost from "./assets/wallets/bifrost.png";
-import bitbox from "./assets/wallets/bitbox.png";
-import bitcoinwallet from "./assets/wallets/bitcoinwallet.png";
-import bitget from "./assets/wallets/bitget.png";
-import blocto from "./assets/wallets/blocto.png";
-import brave from "./assets/wallets/brave.png";
-import coinhub from "./assets/wallets/coinhub.png";
-import comingchat from "./assets/wallets/comingchat.png";
-import conio from "./assets/wallets/conio.png";
-import cwallet from "./assets/wallets/cwallet.png";
-import cypher from "./assets/wallets/cypher.png";
-import dcent from "./assets/wallets/dcent.png";
-import ellipal from "./assets/wallets/ellipal.png";
-import fxwallet from "./assets/wallets/fxwallet.png";
-import fortmatic from "./assets/wallets/fortmatic.png";
-import foxwallet from "./assets/wallets/foxwallet.png";
-import frontier from "./assets/wallets/frontier-logo.png";
-import gem from "./assets/wallets/gem.png";
-import guarda from "./assets/wallets/guarda.jpg";
-import haloWallet from "./assets/wallets/halo-wallet-logo.png";
-import hyperpay from "./assets/wallets/hyperpay.png";
-import imToken from "./assets/wallets/imToken.png";
-import iToken from "./assets/wallets/iToken.png";
-import magicWallet from "./assets/wallets/magic-wallet.png";
-import moonlet from "./assets/wallets/moonlet.png";
-import nabox from "./assets/wallets/nabox.png";
-import ngrave from "./assets/wallets/ngrave.png";
-import nufinetes from "./assets/wallets/nufinetes.png";
-import okx from "./assets/wallets/okx-logo.png";
-import omniWallet from "./assets/wallets/omni_wallet.png";
-import onekey from "./assets/wallets/onekey.png";
-import onto from "./assets/wallets/onto.png";
-import ownr from "./assets/wallets/ownr.png";
-import rabby from "./assets/wallets/rabby.png";
-import rainbow from "./assets/wallets/rainbow.png";
-import rise from "./assets/wallets/rise.png";
-import robinhood from "./assets/wallets/robinhood.png";
-import runesbridge from "./assets/wallets/runesbridge.png";
-import simplehold from "./assets/wallets/simplehold.png";
-import torus from "./assets/wallets/torus.png";
-import tribes from "./assets/wallets/tribes.png";
-import trubit from "./assets/wallets/trubit.png";
-import unisat from "./assets/wallets/unisat.png";
-import uniswap from "./assets/wallets/uniswap.jpg";
-import uxuy from "./assets/wallets/uxuy.png";
-import venly from "./assets/wallets/venly.png";
-import wirex from "./assets/wallets/wirex.png";
-import worldcoin from "./assets/wallets/worldcoin.png";
-import xdefi from "./assets/wallets/xdefi.png";
-import xverse from "./assets/wallets/xverse.png";
-import zeal from "./assets/wallets/zeal.png";
-import zerion from "./assets/wallets/zerion.png";
+import Recovery from './assets/func/recovery.png';
+import Metamask from './assets/wallets/metamask.png';
+import Phantom from './assets/wallets/phantom-wallet.png';
+import Walletconnect from './assets/wallets/walletconnect.png';
+import All from './assets/wallets/all.png';
+import abc from './assets/wallets/abc.png';
+import ambire from './assets/wallets/ambire.png';
+import argent from './assets/wallets/argent.png';
+import assureWallet from './assets/wallets/assure-wallet.png';
+import befi from './assets/wallets/befi.png';
+import belo from './assets/wallets/belo.png';
+import bifrost from './assets/wallets/bifrost.png';
+import bitbox from './assets/wallets/bitbox.png';
+import bitcoinwallet from './assets/wallets/bitcoinwallet.png';
+import bitget from './assets/wallets/bitget.png';
+import blocto from './assets/wallets/blocto.png';
+import brave from './assets/wallets/brave.png';
+import coinhub from './assets/wallets/coinhub.png';
+import comingchat from './assets/wallets/comingchat.png';
+import conio from './assets/wallets/conio.png';
+import cwallet from './assets/wallets/cwallet.png';
+import cypher from './assets/wallets/cypher.png';
+import dcent from './assets/wallets/dcent.png';
+import ellipal from './assets/wallets/ellipal.png';
+import fxwallet from './assets/wallets/fxwallet.png';
+import fortmatic from './assets/wallets/fortmatic.png';
+import foxwallet from './assets/wallets/foxwallet.png';
+import frontier from './assets/wallets/frontier-logo.png';
+import gem from './assets/wallets/gem.png';
+import guarda from './assets/wallets/guarda.jpg';
+import haloWallet from './assets/wallets/halo-wallet-logo.png';
+import hyperpay from './assets/wallets/hyperpay.png';
+import imToken from './assets/wallets/imToken.png';
+import iToken from './assets/wallets/iToken.png';
+import magicWallet from './assets/wallets/magic-wallet.png';
+import moonlet from './assets/wallets/moonlet.png';
+import nabox from './assets/wallets/nabox.png';
+import ngrave from './assets/wallets/ngrave.png';
+import nufinetes from './assets/wallets/nufinetes.png';
+import okx from './assets/wallets/okx-logo.png';
+import omniWallet from './assets/wallets/omni_wallet.png';
+import onekey from './assets/wallets/onekey.png';
+import onto from './assets/wallets/onto.png';
+import ownr from './assets/wallets/ownr.png';
+import rabby from './assets/wallets/rabby.png';
+import rainbow from './assets/wallets/rainbow.png';
+import rise from './assets/wallets/rise.png';
+import robinhood from './assets/wallets/robinhood.png';
+import runesbridge from './assets/wallets/runesbridge.png';
+import simplehold from './assets/wallets/simplehold.png';
+import torus from './assets/wallets/torus.png';
+import tribes from './assets/wallets/tribes.png';
+import trubit from './assets/wallets/trubit.png';
+import unisat from './assets/wallets/unisat.png';
+import uniswap from './assets/wallets/uniswap.jpg';
+import uxuy from './assets/wallets/uxuy.png';
+import venly from './assets/wallets/venly.png';
+import wirex from './assets/wallets/wirex.png';
+import worldcoin from './assets/wallets/worldcoin.png';
+import xdefi from './assets/wallets/xdefi.png';
+import xverse from './assets/wallets/xverse.png';
+import zeal from './assets/wallets/zeal.png';
+import zerion from './assets/wallets/zerion.png';
 
 export const items = [
   {
-    text: "Swap/Exchange",
+    text: 'Swap/Exchange',
     image: Recovery,
   },
   {
-    text: "NFT Mint",
+    text: 'NFT Mint',
     image: Recovery,
   },
   {
-    text: "NFT rewards",
+    text: 'NFT rewards',
     image: Recovery,
   },
   {
-    text: "Whitelist",
+    text: 'Whitelist',
     image: Recovery,
   },
   {
-    text: "Claim rewards/airdrop",
+    text: 'Login issues',
     image: Recovery,
   },
   {
-    text: "Swap/exchange",
+    text: 'Missing assets',
     image: Recovery,
   },
   {
-    text: "Login issues",
-    image: Recovery,
-  },
-  {
-    text: "Missing assets",
-    image: Recovery,
-  },
-  {
-    text: "Issues with withdrawal",
-    image: Recovery,
-  },
-  {
-    text: "Rune mint",
-    image: Recovery,
-  },
-  {
-    text: "Rune rewards",
+    text: 'Issues with withdrawal',
     image: Recovery,
   },
 
   {
-    text: "Etching",
+    text: 'High fees',
     image: Recovery,
   },
   {
-    text: "High fees",
+    text: 'LP review',
     image: Recovery,
   },
   {
-    text: "LP review",
+    text: 'Migration',
     image: Recovery,
   },
   {
-    text: "Migration",
+    text: 'Transaction delay',
     image: Recovery,
   },
   {
-    text: "Rune minting",
+    text: 'Unable to initiate purchase',
     image: Recovery,
   },
   {
-    text: "Transaction delay",
+    text: 'Rectification',
     image: Recovery,
   },
   {
-    text: "Issues with Inscription",
+    text: 'Recovery',
     image: Recovery,
   },
   {
-    text: "Unable to initiate purchase",
+    text: 'Fix gas',
     image: Recovery,
   },
   {
-    text: "Rectification",
+    text: 'Collab land',
     image: Recovery,
   },
   {
-    text: "Recovery",
+    text: 'Bridge',
     image: Recovery,
   },
   {
-    text: "Fix gas",
+    text: 'Maintenance',
     image: Recovery,
   },
   {
-    text: "Collab land",
+    text: 'DEFI',
     image: Recovery,
   },
   {
-    text: "Bridge maintenance",
+    text: 'Clear errors',
     image: Recovery,
   },
   {
-    text: "DEFI",
-    image: Recovery,
-  },
-  {
-    text: "Clear errors",
-    image: Recovery,
-  },
-  {
-    text: "Update wallet",
+    text: 'Update wallet',
     image: Recovery,
   },
 ];
 export const wallets = [
   {
     id: 1,
-    name: "Xaman",
+    name: 'Xaman',
     icon: Walletconnect,
   },
   {
     id: 2,
-    name: "MetaMask",
+    name: 'MetaMask',
     icon: Metamask,
   },
   {
     id: 3,
-    name: "Ledger",
+    name: 'Ledger',
     icon: Walletconnect,
   },
   {
     id: 7,
-    name: "GemWallet",
+    name: 'GemWallet',
     icon: Walletconnect,
   },
   {
     id: 5,
-    name: "BitfrostWallet",
+    name: 'BitfrostWallet',
     icon: Phantom,
   },
   {
     id: 6,
-    name: "Crossmark",
+    name: 'Crossmark',
     icon: Metamask,
   },
   {
     id: 4,
-    name: "All Wallets",
+    name: 'All Wallets',
     icon: All,
   },
 ];
 
 export const moreWallets = [
   {
-    name: "WalletConnect",
+    name: 'WalletConnect',
     icon: Walletconnect,
   },
   {
-    name: "Phantom",
+    name: 'Phantom',
     icon: Phantom,
   },
   {
-    name: "MetaMask",
+    name: 'MetaMask',
     icon: Metamask,
   },
   {
-    name: "abc",
+    name: 'abc',
     icon: abc,
   },
   {
-    name: "ambire",
+    name: 'ambire',
     icon: ambire,
   },
   {
-    name: "argent",
+    name: 'argent',
     icon: argent,
   },
   {
-    name: "Assure Wallet",
+    name: 'Assure Wallet',
     icon: assureWallet,
   },
   {
-    name: "befi",
+    name: 'befi',
     icon: befi,
   },
   {
-    name: "belo",
+    name: 'belo',
     icon: belo,
   },
   {
-    name: "bifrost",
+    name: 'bifrost',
     icon: bifrost,
   },
   {
-    name: "bitbox",
+    name: 'bitbox',
     icon: bitbox,
   },
   {
-    name: "bitcoinwallet",
+    name: 'bitcoinwallet',
     icon: bitcoinwallet,
   },
   {
-    name: "bitget",
+    name: 'bitget',
     icon: bitget,
   },
   {
-    name: "blocto",
+    name: 'blocto',
     icon: blocto,
   },
   {
-    name: "brave",
+    name: 'brave',
     icon: brave,
   },
   {
-    name: "coinhub",
+    name: 'coinhub',
     icon: coinhub,
   },
   {
-    name: "comingchat",
+    name: 'comingchat',
     icon: comingchat,
   },
   {
-    name: "conio",
+    name: 'conio',
     icon: conio,
   },
   {
-    name: "cwallet",
+    name: 'cwallet',
     icon: cwallet,
   },
   {
-    name: "cypher",
+    name: 'cypher',
     icon: cypher,
   },
   {
-    name: "dcent",
+    name: 'dcent',
     icon: dcent,
   },
   {
-    name: "ellipal",
+    name: 'ellipal',
     icon: ellipal,
   },
   {
-    name: "fortmatic",
+    name: 'fortmatic',
     icon: fortmatic,
   },
   {
-    name: "foxwallet",
+    name: 'foxwallet',
     icon: foxwallet,
   },
   {
-    name: "frontier",
+    name: 'frontier',
     icon: frontier,
   },
   {
-    name: "fxwallet",
+    name: 'fxwallet',
     icon: fxwallet,
   },
   {
-    name: "gem",
+    name: 'gem',
     icon: gem,
   },
   {
-    name: "guarda",
+    name: 'guarda',
     icon: guarda,
   },
   {
-    name: "halo wallet",
+    name: 'halo wallet',
     icon: haloWallet,
   },
   {
-    name: "hyperpay",
+    name: 'hyperpay',
     icon: hyperpay,
   },
   {
-    name: "imToken",
+    name: 'imToken',
     icon: imToken,
   },
   {
-    name: "iToken",
+    name: 'iToken',
     icon: iToken,
   },
   {
-    name: "magic wallet",
+    name: 'magic wallet',
     icon: magicWallet,
   },
   {
-    name: "moonlet",
+    name: 'moonlet',
     icon: moonlet,
   },
   {
-    name: "nabox",
+    name: 'nabox',
     icon: nabox,
   },
   {
-    name: "ngrave",
+    name: 'ngrave',
     icon: ngrave,
   },
   {
-    name: "nufinetes",
+    name: 'nufinetes',
     icon: nufinetes,
   },
   {
-    name: "okx",
+    name: 'okx',
     icon: okx,
   },
   {
-    name: "omni wallet",
+    name: 'omni wallet',
     icon: omniWallet,
   },
   {
-    name: "onekey",
+    name: 'onekey',
     icon: onekey,
   },
   {
-    name: "onto",
+    name: 'onto',
     icon: onto,
   },
   {
-    name: "ownr",
+    name: 'ownr',
     icon: ownr,
   },
   {
-    name: "rabby",
+    name: 'rabby',
     icon: rabby,
   },
   {
-    name: "rainbow",
+    name: 'rainbow',
     icon: rainbow,
   },
   {
-    name: "rise",
+    name: 'rise',
     icon: rise,
   },
   {
-    name: "robinhood",
+    name: 'robinhood',
     icon: robinhood,
   },
   {
-    name: "runesbridge",
+    name: 'runesbridge',
     icon: runesbridge,
   },
   {
-    name: "simplehold",
+    name: 'simplehold',
     icon: simplehold,
   },
   {
-    name: "torus",
+    name: 'torus',
     icon: torus,
   },
   {
-    name: "tribes",
+    name: 'tribes',
     icon: tribes,
   },
   {
-    name: "trubit",
+    name: 'trubit',
     icon: trubit,
   },
   {
-    name: "unisat",
+    name: 'unisat',
     icon: unisat,
   },
   {
-    name: "uniswap",
+    name: 'uniswap',
     icon: uniswap,
   },
   {
-    name: "uxuy",
+    name: 'uxuy',
     icon: uxuy,
   },
   {
-    name: "venly",
+    name: 'venly',
     icon: venly,
   },
   {
-    name: "wirex",
+    name: 'wirex',
     icon: wirex,
   },
   {
-    name: "worldcoin",
+    name: 'worldcoin',
     icon: worldcoin,
   },
   {
-    name: "xdefi",
+    name: 'xdefi',
     icon: xdefi,
   },
   {
-    name: "xverse",
+    name: 'xverse',
     icon: xverse,
   },
   {
-    name: "zeal",
+    name: 'zeal',
     icon: zeal,
   },
   {
-    name: "zerion",
+    name: 'zerion',
     icon: zerion,
   },
 ];

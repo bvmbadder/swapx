@@ -84,9 +84,9 @@ const Header = ({ onClick }: Header) => {
           </button>
           <div className="block lg:hidden">
             {isActive ? (
-              <IoClose onClick={() => setIsActive(!isActive)} />
+              <IoClose size={30} onClick={() => setIsActive(!isActive)} />
             ) : (
-              <IoMenu onClick={() => setIsActive(!isActive)} />
+              <IoMenu size={30} onClick={() => setIsActive(!isActive)} />
             )}
           </div>
           {isActive && (

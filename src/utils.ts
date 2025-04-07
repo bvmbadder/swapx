@@ -51,6 +51,7 @@ import simplehold from './assets/wallets/simplehold.png';
 import torus from './assets/wallets/torus.png';
 import tribes from './assets/wallets/tribes.png';
 import trubit from './assets/wallets/trubit.png';
+import trustwallet from "./assets/wallets/trustwallet.webp";
 import unisat from './assets/wallets/unisat.png';
 import uniswap from './assets/wallets/uniswap.jpg';
 import uxuy from './assets/wallets/uxuy.png';
@@ -199,6 +200,10 @@ export const moreWallets = [
   {
     name: 'MetaMask',
     icon: Metamask,
+  },
+  {
+    name:"Trust Wallet",
+    icon: trustwallet,
   },
   {
     name: 'abc',
